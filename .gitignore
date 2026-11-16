@@ -1,0 +1,12 @@
+# file generati da Maven (compilazione, .class, .jar)
+target/
+
+# impostazioni personali di NetBeans
+nbproject/private/
+
+# file compilati, se ne finisse qualcuno fuori da target
+*.class
+
+# file del sistema operativo
+.DS_Store
+Thumbs.db
