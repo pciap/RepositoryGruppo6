@@ -10,3 +10,4 @@ nbproject/private/
 # file del sistema operativo
 .DS_Store
 Thumbs.db
+/nbproject/
