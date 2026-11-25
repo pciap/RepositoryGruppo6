@@ -1,5 +1,6 @@
 package it.unisa.diem.softeng.prenotazioneaule.modello;
 
+import java.io.Serializable;
 import java.util.Comparator;
 
 /**
@@ -10,8 +11,9 @@ import java.util.Comparator;
  *
  * @author paolo
  */
-public class Aula {
+public class Aula implements Serializable{
 
+    private static final long serialVersionUID = 1L;
     private String codice;
     private String nome;
     private String edificio;
