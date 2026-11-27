@@ -54,4 +54,10 @@ final class Controlli {
         }
         return email;
     }
+    public static <T> T richiediPresente(T valore, String campo) {
+        if (valore == null) {
+            throw new IllegalArgumentException("Il campo " + campo + " è obbligatorio");
+        }
+        return valore;
+    }
 }
