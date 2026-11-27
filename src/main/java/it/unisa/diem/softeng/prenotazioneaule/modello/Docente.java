@@ -5,21 +5,23 @@
  */
 package it.unisa.diem.softeng.prenotazioneaule.modello;
 
+import java.io.Serializable;
 import java.util.Comparator;
 
 /**
  * @brief Rappresenta un docente del dipartimento universitario (ED2).
  * @author anton
  */
-public class Docente {
+public class Docente  implements Serializable{
 
     /**
      * @brief Ordina i docenti per cognome e, a parità di cognome, per nome (FI2.4), senza distinguere maiuscole e minuscole.
      */
+    private static final long serialVersionUID = 1L;
     public static final Comparator<Docente> ORDINE_ALFABETICO
             = Comparator.comparing(Docente::getCognome, String.CASE_INSENSITIVE_ORDER)
                     .thenComparing(Docente::getNome, String.CASE_INSENSITIVE_ORDER);
-
+    
     private String email;
     private String nome;
     private String cognome;
